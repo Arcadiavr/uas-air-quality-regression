@@ -25,7 +25,7 @@ git init
 git add .
 git commit -m "UAS regression Air Quality - train validation test pipeline"
 git branch -M main
-git remote add origin https://github.com/USERNAME/REPO.git
+git remote add origin https://github.com/Arcadiavr/uas-air-quality-regression.git
 git push -u origin main
 ```
 
@@ -39,14 +39,14 @@ Setelah push, ganti `USERNAME` dan `REPO` di link berikut:
 
 | Platform | Format link |
 |----------|-------------|
-| **GitHub** | `https://github.com/USERNAME/REPO` |
-| **Colab** | `https://colab.research.google.com/github/USERNAME/REPO/blob/main/Air_Quality_UAS.ipynb` |
-| **Notebook** | `https://github.com/USERNAME/REPO/blob/main/Air_Quality_UAS.ipynb` |
+| **GitHub** | `https://github.com/Arcadiavr/uas-air-quality-regression` |
+| **Colab** | `https://colab.research.google.com/github/Arcadiavr/uas-air-quality-regression/blob/main/Air_Quality_UAS.ipynb` |
+| **Notebook** | `https://github.com/Arcadiavr/uas-air-quality-regression/blob/main/Air_Quality_UAS.ipynb` |
 
-**Contoh** (jika username `johndoe`, repo `uas-air-quality-regression`):
+**Contoh (Arcadiavr):**
 
-- GitHub: https://github.com/johndoe/uas-air-quality-regression
-- Colab: https://colab.research.google.com/github/johndoe/uas-air-quality-regression/blob/main/Air_Quality_UAS.ipynb
+- GitHub: https://github.com/Arcadiavr/uas-air-quality-regression
+- Colab: https://colab.research.google.com/github/Arcadiavr/uas-air-quality-regression/blob/main/Air_Quality_UAS.ipynb
 
 ---
 
