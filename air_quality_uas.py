@@ -1,12 +1,13 @@
 """
-UAS Pembelajaran Mesin - Regression: Air Quality Dataset
-Universitas MDP - Model Validation and Generalization
+Ujian Akhir Semester — Pembelajaran Mesin (EL4010)
+Universitas MDP — Model Validation and Generalization
 
-Pipeline:
-1. Task Conceptualization
-2. Data Collection & Preparation (Train / Validation / Test)
-3. Model Training & Selection
-4. Final Evaluation (Testing) & Generalization
+Nama  : Agus Priyansah
+NPM   : 2327270005
+Kelas : 25/26/2/TE6A/EL4010
+
+Regresi prediksi konsentrasi CO(GT) pada dataset Air Quality (UCI).
+Pipeline: Task Conceptualization → Data Preparation → Model Selection → Final Evaluation
 """
 
 from pathlib import Path
@@ -155,6 +156,7 @@ def plot_results(y_test, predictions: dict, comparison_df: pd.DataFrame, output_
 def main():
     print("=" * 60)
     print("UAS REGRESSION — AIR QUALITY DATASET")
+    print("Agus Priyansah | NPM 2327270005 | Universitas MDP")
     print("=" * 60)
 
     # -----------------------------------------------------------------------

@@ -1,109 +1,63 @@
-# UAS Pembelajaran Mesin — Regression: Air Quality Dataset
+# Ujian Akhir Semester — Pembelajaran Mesin
 
-**Universitas MDP** | EL4010 Pembelajaran Mesin | Model Validation and Generalization
+## Regresi Prediksi Konsentrasi CO pada Dataset Air Quality
 
-Regresi untuk memprediksi konsentrasi CO (`CO(GT)`) dari dataset Air Quality (UCI), dengan pipeline **Train / Validation / Test** sesuai materi kuliah.
+| | |
+|---|---|
+| **Nama** | Agus Priyansah |
+| **NPM** | 2327270005 |
+| **Kelas** | 25/26/2/TE6A/EL4010 |
+| **Mata Kuliah** | Pembelajaran Mesin (EL4010) |
+| **Institusi** | Universitas MDP |
+| **Topik** | Model Validation and Generalization |
 
 ---
 
-## Link Pengumpulan (untuk laporan UAS)
+## Deskripsi
 
-| Item | Link |
-|------|------|
-| **GitHub Repository** (view) | https://github.com/Arcadiavr/uas-air-quality-regression |
-| **Google Colab** (view) | https://colab.research.google.com/github/Arcadiavr/uas-air-quality-regression/blob/main/Air_Quality_UAS.ipynb |
-| **Notebook langsung** | https://github.com/Arcadiavr/uas-air-quality-regression/blob/main/Air_Quality_UAS.ipynb |
+Penelitian ini membangun model regresi untuk memprediksi konsentrasi karbon monoksida (`CO(GT)`) berdasarkan respons sensor gas dan variabel lingkungan, menggunakan dataset Air Quality dari UCI Machine Learning Repository. Proses pengembangan model mengikuti pipeline pembelajaran mesin dengan pembagian data **training**, **validation**, dan **testing** untuk menilai kemampuan generalisasi model.
+
+---
+
+## Lampiran Digital
+
+| Platform | Tautan |
+|----------|--------|
+| Repositori GitHub | https://github.com/Arcadiavr/uas-air-quality-regression |
+| Google Colab | https://colab.research.google.com/github/Arcadiavr/uas-air-quality-regression/blob/main/Air_Quality_UAS.ipynb |
+| Notebook | https://github.com/Arcadiavr/uas-air-quality-regression/blob/main/Air_Quality_UAS.ipynb |
 
 ---
 
 ## Dataset
 
-| Item | Link |
-|------|------|
-| **UCI Machine Learning Repository** | https://archive.ics.uci.edu/dataset/360/air+quality |
-| **Download dataset (ZIP)** | https://archive.ics.uci.edu/static/public/360/air+quality.zip |
-| **File CSV di repo ini** | `data/AirQualityUCI.csv` |
+| Sumber | Tautan |
+|--------|--------|
+| UCI Machine Learning Repository | https://archive.ics.uci.edu/dataset/360/air+quality |
+| Unduhan resmi (ZIP) | https://archive.ics.uci.edu/static/public/360/air+quality.zip |
 
-**Deskripsi singkat:** Respons rata-rata per jam dari 5 sensor gas metal oxide di area perkotaan Italia (Maret 2004 – Februari 2005). Missing value ditandai dengan `-200`.
-
----
-
-## Referensi Paper
-
-| No. | Referensi | Link |
-|-----|-----------|------|
-| 1 | De Vito, S., et al. (2008). *On field calibration of an electronic nose for benzene estimation in an urban pollution monitoring scenario.* Sensors and Actuators B: Chemical. | https://doi.org/10.1016/j.snb.2008.01.035 |
-| 2 | De Vito, S., et al. (2008). *Calibration and validation of gas sensor arrays for air quality monitoring.* Sensors and Actuators B, 129(2). (cross-sensitivity & drift) | https://archive.ics.uci.edu/dataset/360/air+quality |
-| 3 | Tsanas, A., & Xifara, A. (2012). *Accurate quantitative estimation of energy performance...* (metodologi regresi ML — referensi metode) | https://archive.ics.uci.edu/dataset/242/energy+efficiency |
+Dataset merekam respons rata-rata per jam dari lima sensor gas metal oxide yang dipasang di area perkotaan Italia (Maret 2004 – Februari 2005). Nilai hilang ditandai dengan `-200`.
 
 ---
 
-## Referensi Code / Library
+## Referensi
 
-| No. | Sumber | Link |
-|-----|--------|------|
-| 1 | scikit-learn — Regression | https://scikit-learn.org/stable/supervised_learning.html#regression |
-| 2 | scikit-learn — `train_test_split` | https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html |
-| 3 | scikit-learn — `RandomForestRegressor` | https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html |
-| 4 | scikit-learn — Metrics (RMSE, MAE, R²) | https://scikit-learn.org/stable/modules/model_evaluation.html#regression-metrics |
-| 5 | UCI ML Repository — Python import | https://archive.ics.uci.edu/datasets |
+### Publikasi
 
----
+1. De Vito, S., Massera, E., Piga, M., Martinotto, L., & Francia, G. (2008). On field calibration of an electronic nose for benzene estimation in an urban pollution monitoring scenario. *Sensors and Actuators B: Chemical*, 129(2), 750–757. https://doi.org/10.1016/j.snb.2008.01.035
 
-## Struktur Proyek
+2. UCI Machine Learning Repository (2016). Air Quality Data Set. https://archive.ics.uci.edu/dataset/360/air+quality
 
-```
-├── Air_Quality_UAS.ipynb    # Notebook utama (GitHub / Colab)
-├── air_quality_uas.py         # Script pipeline lengkap
-├── SUBMISSION_LINKS.md        # Template link untuk copy ke laporan
-├── requirements.txt
-├── data/
-│   └── AirQualityUCI.csv
-└── output/
-    ├── model_comparison.csv
-    └── *.png                  # Grafik hasil
-```
+### Implementasi
+
+- scikit-learn — Regression: https://scikit-learn.org/stable/supervised_learning.html#regression
+- scikit-learn — `train_test_split`: https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html
+- scikit-learn — `RandomForestRegressor`: https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html
+- scikit-learn — Regression metrics: https://scikit-learn.org/stable/modules/model_evaluation.html#regression-metrics
 
 ---
 
-## Cara Menjalankan
-
-### Lokal (Windows)
-
-```powershell
-cd "d:\scripts\dataset Pembelajaran mesin"
-py -m pip install -r requirements.txt
-py air_quality_uas.py
-```
-
-Atau buka `Air_Quality_UAS.ipynb` di VS Code / Jupyter.
-
-### Google Colab
-
-1. Upload repo ke GitHub (public).
-2. Buka link Colab:
-   https://colab.research.google.com/github/Arcadiavr/uas-air-quality-regression/blob/main/Air_Quality_UAS.ipynb
-3. Jalankan semua cell — dataset akan diunduh otomatis dari UCI jika file lokal tidak ada.
-
----
-
-## Upload ke GitHub (agar link view bisa dipakai)
-
-```powershell
-cd "d:\scripts\dataset Pembelajaran mesin"
-git init
-git add .
-git commit -m "UAS regression Air Quality - train/val/test pipeline"
-git branch -M main
-git remote add origin https://github.com/Arcadiavr/uas-air-quality-regression.git
-git push -u origin main
-```
-
-Pastikan repository **Public** agar dosen bisa membuka tanpa login.
-
----
-
-## Hasil Model (Test Set)
+## Hasil Evaluasi (Test Set)
 
 | Model | RMSE | MAE | R² |
 |-------|------|-----|-----|
@@ -113,15 +67,16 @@ Pastikan repository **Public** agar dosen bisa membuka tanpa login.
 | **Random Forest** | **0.539** | **0.306** | **0.861** |
 | Gradient Boosting | 0.548 | — | 0.856 |
 
-Model terpilih: **Random Forest** (RMSE validation terendah).
+Model **Random Forest** dipilih berdasarkan nilai RMSE terendah pada validation set dan menunjukkan performa konsisten pada test set.
 
 ---
 
-## Identitas (isi sebelum submit)
+## Struktur Repositori
 
-| Field | Isi |
-|-------|-----|
-| Nama | _[Nama Anda]_ |
-| NIM | _[NIM]_ |
-| Kelas | 25/26/2/TE6A/EL4010 |
-| Mata Kuliah | Pembelajaran Mesin — UAS |
+```
+Air_Quality_UAS.ipynb    — Notebook analisis utama
+air_quality_uas.py       — Implementasi pipeline
+data/AirQualityUCI.csv   — Dataset
+output/                  — Grafik dan tabel hasil evaluasi
+LAMPIRAN_LINK.md         — Lampiran tautan untuk laporan
+```
