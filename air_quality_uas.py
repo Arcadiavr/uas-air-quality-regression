@@ -4,7 +4,7 @@ Universitas MDP — Model Validation and Generalization
 
 Nama  : Agus Priyansah
 NPM   : 2327270005
-Kelas : 25/26/2/TE6A/EL4010
+Kelas : TE6A/EL4010
 
 Regresi prediksi konsentrasi CO(GT) pada dataset Air Quality (UCI).
 Pipeline: Task Conceptualization → Data Preparation → Model Selection → Final Evaluation

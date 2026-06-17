@@ -6,7 +6,7 @@
 |---|---|
 | **Nama** | Agus Priyansah |
 | **NPM** | 2327270005 |
-| **Kelas** | 25/26/2/TE6A/EL4010 |
+| **Kelas** | TE6A/EL4010 |
 | **Mata Kuliah** | Pembelajaran Mesin (EL4010) |
 | **Institusi** | Universitas MDP |
 | **Topik** | Model Validation and Generalization |
