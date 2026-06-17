@@ -1,65 +1,35 @@
-# Ujian Akhir Semester — Pembelajaran Mesin
+# Ujian Akhir Semester — Pembelajaran Mesin (EL4010)
 
-## Regresi Prediksi Konsentrasi CO pada Dataset Air Quality
-
-| | |
-|---|---|
-| **Nama** | Agus Priyansah |
-| **NPM** | 2327270005 |
-| **Kelas** | TE6A/EL4010 |
-| **Mata Kuliah** | Pembelajaran Mesin (EL4010) |
-| **Institusi** | Universitas MDP |
-
----
+**Agus Priyansah | NIM 2327270005 | Kelas TE6A**
 
 ## Lampiran Digital
 
 | Platform | Tautan |
 |----------|--------|
-| Repositori GitHub | https://github.com/Arcadiavr/uas-air-quality-regression |
-| Google Colab | https://colab.research.google.com/github/Arcadiavr/uas-air-quality-regression/blob/main/Air_Quality_UAS.ipynb |
+| GitHub | https://github.com/Arcadiavr/uas-air-quality-regression |
+| Google Colab | https://colab.research.google.com/github/Arcadiavr/uas-air-quality-regression/blob/main/UAS_PSD_AgusPriyansah_2327270005.ipynb |
 
----
+## Notebook
+
+`UAS_PSD_AgusPriyansah_2327270005.ipynb` — Regression, Dataset Air Quality (UCI No. 1)
+
+## Struktur (sesuai soal UAS)
+
+**Soal 1:** Studi Kasus · Dataset · EDA · Feature Engineering  
+**Soal 2:** Modeling · Evaluasi Kinerja · Inference Data Baru
 
 ## Dataset
 
-| Sumber | Tautan |
-|--------|--------|
-| UCI Machine Learning Repository | https://archive.ics.uci.edu/dataset/360/air+quality |
-| Unduhan resmi (ZIP) | https://archive.ics.uci.edu/static/public/360/air+quality.zip |
+https://archive.ics.uci.edu/dataset/360/air+quality
 
-Dataset juga tersedia di `data/AirQualityUCI.csv`. Pada Google Colab, dataset akan diunduh otomatis dari UCI jika file lokal tidak ditemukan.
+Dataset diunduh otomatis di Colab jika file lokal tidak ada.
 
----
-
-## Struktur Repositori
+## File
 
 ```
-Air_Quality_UAS.ipynb       — Notebook analisis utama
-LAMPIRAN_LINK.md            — Lampiran tautan untuk laporan
-requirements.txt            — Daftar library Python
-data/AirQualityUCI.csv      — Dataset
-output/                     — Grafik dan tabel hasil evaluasi
+UAS_PSD_AgusPriyansah_2327270005.ipynb
+LAMPIRAN_LINK.md
+data/AirQualityUCI.csv
+output/
+requirements.txt
 ```
-
----
-
-## Hasil Evaluasi (Test Set)
-
-| Model | RMSE | MAE | R² |
-|-------|------|-----|-----|
-| Linear Regression | 0.613 | — | 0.820 |
-| Ridge | 0.613 | — | 0.820 |
-| Lasso | 0.617 | — | 0.817 |
-| **Random Forest** | **0.539** | **0.306** | **0.861** |
-| Gradient Boosting | 0.548 | — | 0.856 |
-
-Model **Random Forest** dipilih berdasarkan RMSE terendah pada validation set.
-
----
-
-## Referensi
-
-- De Vito, S., et al. (2008). https://doi.org/10.1016/j.snb.2008.01.035
-- UCI Air Quality: https://archive.ics.uci.edu/dataset/360/air+quality
-- scikit-learn: https://scikit-learn.org/stable/supervised_learning.html#regression
