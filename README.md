@@ -9,13 +9,6 @@
 | **Kelas** | TE6A/EL4010 |
 | **Mata Kuliah** | Pembelajaran Mesin (EL4010) |
 | **Institusi** | Universitas MDP |
-| **Topik** | Model Validation and Generalization |
-
----
-
-## Deskripsi
-
-Penelitian ini membangun model regresi untuk memprediksi konsentrasi karbon monoksida (`CO(GT)`) berdasarkan respons sensor gas dan variabel lingkungan, menggunakan dataset Air Quality dari UCI Machine Learning Repository. Proses pengembangan model mengikuti pipeline pembelajaran mesin dengan pembagian data **training**, **validation**, dan **testing** untuk menilai kemampuan generalisasi model.
 
 ---
 
@@ -25,7 +18,6 @@ Penelitian ini membangun model regresi untuk memprediksi konsentrasi karbon mono
 |----------|--------|
 | Repositori GitHub | https://github.com/Arcadiavr/uas-air-quality-regression |
 | Google Colab | https://colab.research.google.com/github/Arcadiavr/uas-air-quality-regression/blob/main/Air_Quality_UAS.ipynb |
-| Notebook | https://github.com/Arcadiavr/uas-air-quality-regression/blob/main/Air_Quality_UAS.ipynb |
 
 ---
 
@@ -36,24 +28,19 @@ Penelitian ini membangun model regresi untuk memprediksi konsentrasi karbon mono
 | UCI Machine Learning Repository | https://archive.ics.uci.edu/dataset/360/air+quality |
 | Unduhan resmi (ZIP) | https://archive.ics.uci.edu/static/public/360/air+quality.zip |
 
-Dataset merekam respons rata-rata per jam dari lima sensor gas metal oxide yang dipasang di area perkotaan Italia (Maret 2004 – Februari 2005). Nilai hilang ditandai dengan `-200`.
+Dataset juga tersedia di `data/AirQualityUCI.csv`. Pada Google Colab, dataset akan diunduh otomatis dari UCI jika file lokal tidak ditemukan.
 
 ---
 
-## Referensi
+## Struktur Repositori
 
-### Publikasi
-
-1. De Vito, S., Massera, E., Piga, M., Martinotto, L., & Francia, G. (2008). On field calibration of an electronic nose for benzene estimation in an urban pollution monitoring scenario. *Sensors and Actuators B: Chemical*, 129(2), 750–757. https://doi.org/10.1016/j.snb.2008.01.035
-
-2. UCI Machine Learning Repository (2016). Air Quality Data Set. https://archive.ics.uci.edu/dataset/360/air+quality
-
-### Implementasi
-
-- scikit-learn — Regression: https://scikit-learn.org/stable/supervised_learning.html#regression
-- scikit-learn — `train_test_split`: https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html
-- scikit-learn — `RandomForestRegressor`: https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html
-- scikit-learn — Regression metrics: https://scikit-learn.org/stable/modules/model_evaluation.html#regression-metrics
+```
+Air_Quality_UAS.ipynb       — Notebook analisis utama
+LAMPIRAN_LINK.md            — Lampiran tautan untuk laporan
+requirements.txt            — Daftar library Python
+data/AirQualityUCI.csv      — Dataset
+output/                     — Grafik dan tabel hasil evaluasi
+```
 
 ---
 
@@ -67,16 +54,12 @@ Dataset merekam respons rata-rata per jam dari lima sensor gas metal oxide yang 
 | **Random Forest** | **0.539** | **0.306** | **0.861** |
 | Gradient Boosting | 0.548 | — | 0.856 |
 
-Model **Random Forest** dipilih berdasarkan nilai RMSE terendah pada validation set dan menunjukkan performa konsisten pada test set.
+Model **Random Forest** dipilih berdasarkan RMSE terendah pada validation set.
 
 ---
 
-## Struktur Repositori
+## Referensi
 
-```
-Air_Quality_UAS.ipynb    — Notebook analisis utama
-air_quality_uas.py       — Implementasi pipeline
-data/AirQualityUCI.csv   — Dataset
-output/                  — Grafik dan tabel hasil evaluasi
-LAMPIRAN_LINK.md         — Lampiran tautan untuk laporan
-```
+- De Vito, S., et al. (2008). https://doi.org/10.1016/j.snb.2008.01.035
+- UCI Air Quality: https://archive.ics.uci.edu/dataset/360/air+quality
+- scikit-learn: https://scikit-learn.org/stable/supervised_learning.html#regression

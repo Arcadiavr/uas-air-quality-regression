@@ -14,6 +14,11 @@ venv/
 Thumbs.db
 .vscode/
 
-# Zip (dataset CSV sudah di folder data/)
+# Dataset tambahan (CSV utama tetap di repo)
 data/air_quality.zip
 data/__MACOSX/
+data/*.xlsx
+
+# Script internal (tidak untuk submission)
+upload_github.ps1
+GITHUB_SETUP.md
